@@ -5,24 +5,18 @@
 <br />
 <p align="center">
     <img src="https://avatars.githubusercontent.com/u/73503432?v=4" alt="Logo" width="80" height="80" />
-    <h3 align="center"><a href="https://learnwithsumit.com/courses/think-in-a-redux-way/adding-todo">THINK IN A REDUX WAY - MODULE 3 - LESSON 9</a></h3>
+    <h3 align="center"><a href="https://learnwithsumit.com/courses/think-in-a-redux-way/why-redux-toolkit">THINK IN A REDUX WAY - MODULE 5 - LESSON 1</a></h3>
 </p>
 
 <!-- TABLE OF CONTENTS -->
 
 ## ![tableOfContent][tableofcontent-shield] Table of Contents
 
-| HTML TEMPLATE                            | CODE RUN                   | CONTACT                    |
-| ---------------------------------------- | -------------------------- | -------------------------- |
-| [Get HTML template](#-get-html-template) | [How to run](#-how-to-run) | [Contact us](#-contact-us) |
+| CODE RUN                   | CONTACT                    |
+| -------------------------- | -------------------------- |
+| [How to run](#-how-to-run) | [Contact us](#-contact-us) |
 
 <br>
-
-<!-- GET HTML TEMPLATE -->
-
-## ![htmlIcon][htmlicon-shield] Get HTML Template
-
-You can find the raw HTML template of the todo application from the "html_template" folder.
 
 <!-- HOW TO RUN -->
 
@@ -40,9 +34,9 @@ Please follow the below instructions to run this branch in your machine:
    ```sh
    cd think-in-a-redux-way
    ```
-4. Checkout/switch to branch 3.9
+4. Checkout/switch to branch 5.1
    ```sh
-   git checkout 3.9
+   git checkout 5.1
    ```
 5. Install dependencies
    ```sh
@@ -81,5 +75,6 @@ Please follow the below instructions to run this branch in your machine:
 [mail-url]: mailto:support@learnwithsumit.com
 [tableofcontent-shield]: https://img.icons8.com/external-flatart-icons-flat-flatarticons/28/undefined/external-direction-business-and-teamwork-flatart-icons-flat-flatarticons.png
 [htmlicon-shield]: https://img.icons8.com/external-flaticons-flat-flat-icons/28/undefined/external-html-computer-programming-flaticons-flat-flat-icons.png
+[servericon-shield]: https://img.icons8.com/external-itim2101-flat-itim2101/28/undefined/external-server-network-technology-itim2101-flat-itim2101-2.png
 [rocketicon-shield]: https://img.icons8.com/arcade/30/undefined/experimental-rocket-arcade.png
 [contacticon-shield]: https://img.icons8.com/external-flaticons-lineal-color-flat-icons/28/undefined/external-support-communication-media-flaticons-lineal-color-flat-icons.png
