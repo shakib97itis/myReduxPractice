@@ -1,8 +1,14 @@
 /* eslint-disable react-refresh/only-export-components */
+/* eslint-disable no-unused-vars */
+
 import {connect} from 'react-redux';
 import {increment, decrement} from '../redux/counter/actions';
+import {
+  dynamicDecrement,
+  dynamicIncrement,
+} from '../redux/dynamicCounter/actions';
 
-function Counter({count, increment, decrement, title}) {
+function VariableCounter({count, increment, decrement, title}) {
   return (
     <div className="p-4 h-auto flex flex-col items-center justify-center space-y-5 bg-white rounded shadow">
       <h1>{title}</h1>
@@ -25,15 +31,22 @@ function Counter({count, increment, decrement, title}) {
   );
 }
 
-function mapStateToProps(state) {
-  return {count: state.counter.value};
+function mapStateToProps(state, ownProps) {
+  return ownProps.dynamic
+    ? {count: state.dynamicCounter.value}
+    : {count: state.counter.value};
 }
 
-function mapDispatchToProps(dispatch) {
-  return {
-    increment: () => dispatch(increment()),
-    decrement: () => dispatch(decrement()),
-  };
+function mapDispatchToProps(dispatch, ownProps) {
+  return ownProps.dynamic
+    ? {
+        increment: () => dispatch(dynamicIncrement(5)),
+        decrement: () => dispatch(dynamicDecrement(2)),
+      }
+    : {
+        increment: () => dispatch(increment()),
+        decrement: () => dispatch(decrement()),
+      };
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Counter);
+export default connect(mapStateToProps, mapDispatchToProps)(VariableCounter);
