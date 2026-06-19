@@ -1,30 +1,19 @@
 import {Provider} from 'react-redux';
-import Counter from './components/Counter';
-import HooksCounter from './components/HooksCounter';
-import DynamicHooksCounter from './components/DynamicHooksCounter';
 import store from './redux/store';
-import VariableCounter from './components/VariableCounter';
+import Header from './components/Header';
+import Input from './components/input';
+import Preview from './components/Preview';
 
-export default function App() {
+function App() {
   return (
     <Provider store={store}>
-      <div className="w-screen h-screen p-10 bg-gray-100 text-slate-700">
-        <h1 className="max-w-md mx-auto text-center text-2xl font-bold">
-          Simple Counter Application
-        </h1>
-
-        <div className="max-w-md mx-auto mt-10 space-y-5">
-          <Counter title="Counter Classic" />
-          <hr />
-          <HooksCounter title="Hooks Counter" />
-          <hr />
-          <VariableCounter title="Variable Counter" />
-          <hr />
-          <VariableCounter title="Dynamic Variable Counter" dynamic />
-          <hr />
-          <DynamicHooksCounter title="Dynamic Hooks Counter" />
-        </div>
-      </div>
+      <Header />
+      <section>
+        <Input />
+        <Preview />
+      </section>
     </Provider>
   );
 }
+
+export default App;
