@@ -11,9 +11,9 @@ const delayActionMiddleware = (store) => (next) => (action) => {
   }
 };
 
-const fetchAsyncMiddleware = (store) => (next) => (action) => {
+const fetchAsyncMiddlewareThunk = (store) => (next) => (action) => {
   if (typeof action === 'function') {
-    return fetchTodos(store, next);
+    return action(store.dispatch, store.getState);
   } else {
     return next(action);
   }
